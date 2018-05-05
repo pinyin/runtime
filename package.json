@@ -1,0 +1,37 @@
+{
+  "name": "@pinyin/runtime",
+  "version": "0.0.1",
+  "description": "Report runtime",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "rm -rf dist && npx tsc",
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinyin/runtime.git"
+  },
+  "keywords": [
+    "runtime"
+  ],
+  "author": "Bo Bao <bob432091@gmail.com> (https://github.com/pinyin)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinyin/runtime/issues"
+  },
+  "homepage": "https://github.com/pinyin/runtime#readme",
+  "devDependencies": {
+    "@types/ua-parser-js": "^0.7.32",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@pinyin/maybe": "0.0.5",
+    "tslib": "^1.9.0",
+    "ua-parser-js": "^0.7.18"
+  }
+}
